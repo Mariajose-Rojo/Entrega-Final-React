@@ -1,15 +1,16 @@
 import { useState } from 'react'
 
-import './App.css'
+// import './App.css'
 import Navbar from './components/Navbar'
+import Promocion from './components/Promocion'
+import Banner from './components/Banner'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <Promocion/>
       <Navbar/>
-      <h1>Primer Pre-Entrega</h1>
+      <Banner/>
     </>
   )
 }

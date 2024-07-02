@@ -10,36 +10,3 @@
   height: 100%;
 } */
 
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(33, 80, 199);
-  width: 100%; /*100vw*/
-  padding: 1rem;
-}
-
-.navbar-title{
-  font-size: 25px;
-  font-weight: 600;
-  color: white;
-  margin-left: 1.5rem;
-}
-
-.navbar-links{
-  display: flex;
-  margin-right: 1.5rem;
-  gap: 1rem;
-
-  list-style: none; 
-}
-
-.navbar-links a {
-  color: aliceblue;
-  font-size: 18px;
-}
-
-.navbar-links a:hover {
-  text-decoration: underline;
-  color: rgb(175, 232, 118);
-}

@@ -2,19 +2,32 @@ import CartWidget from "./CartWidget";
 
 const Navbar = () => {
     return (
-      <nav className="navbar" >
-        <a className="navbar-title"  href="#">Mi Empresa</a>
-        <ul className="navbar-links">
-          <li><a href="#categoria1">Categoría 1</a></li>
-          <li><a href="#categoria2">Categoría 2</a></li>
-          <li><a href="#categoria3">Categoría 3</a></li>
-          {/* carrito de compras */}
-          <li><a href="#"> 
+      <div className="container bg-light py-4 mb-2">
+        <div className="row align-items-center">
+            {/* parte del logo */}
+            <div className="col">
+                <img src="public/logo-farmacity.svg" alt="Logo farmacity"  width={160}/>
+            </div>
+            {/* parte de la barra de navegacion */}
+            <div className="col">
+                <ul className="nav justify-content-center">
+                    <li className="nav-item">
+                    <a className="nav-link text-black" href="#">Belleza</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link text-black" href="#">Dermocosmetica</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link text-black" href="#">Salud y Farmacia</a>
+                    </li>
+                </ul>
+            </div>
+            {/* carrito de compras */}
+            <div className="col text-end">
                 <CartWidget/>
-            </a>
-          </li>
-        </ul>
-      </nav>
+            </div>
+        </div>
+      </div>
     );
   }
 
