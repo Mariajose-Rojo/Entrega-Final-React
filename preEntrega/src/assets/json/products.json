@@ -1,0 +1,74 @@
+[
+    {
+        "id":1, "nombre": "Oleo Extraordinario Elvive x 100 ml",
+        "descripcion": "El Óleo Extraordinario transforma el pelo seco llenándolo de vida, luciendo sublime en todos sus aspectos.",
+        "img": "https://farmacityar.vtexassets.com/arquivos/ids/230686-800-auto?v=638024798167600000&width=800&height=auto&aspect=true",
+        "precio":8200,
+        "stock": 15,
+        "categoria": "dermocosmetica" 
+    },
+    {
+        "ID": 2,
+        "Nombre del Producto": "Crema Hidratante Facial",
+        "Descripción": "Crema hidratante para uso diario con ácido hialurónico. Aporta una hidratación intensa y duradera.",
+        "Categoría": "Dermocosmética",
+        "Precio": 7850,
+        "Stock": 20,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/254303-800-auto?v=638487958530330000&width=800&height=auto&aspect=true"
+      },
+      {
+        "ID": 3,
+        "Nombre del Producto": "Multivitaminas Complejo B",
+        "Descripción": "Suplemento vitamínico que aporta todas las vitaminas del complejo B para mantener una buena salud y energía.",
+        "Categoría": "Salud y Farmacia",
+        "Precio": 5450,
+        "Stock": 15,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/204855-800-auto?v=637404701491500000&width=800&height=auto&aspect=true"
+      },
+      {
+        "ID": 4,
+        "Nombre del Producto": "Champú Fortalecedor",
+        "Descripción": "Champú enriquecido con biotina y keratina para fortalecer y revitalizar el cabello débil y dañado.",
+        "Categoría": "Belleza",
+        "Precio": 2600,
+        "Stock": 22,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/252793-800-auto?v=638455249371870000&width=800&height=auto&aspect=true"
+      },
+      {
+        "ID": 5,
+        "Nombre del Producto": "Protector Solar SPF 50+",
+        "Descripción": "Protector solar de amplio espectro con SPF 50+, ideal para pieles sensibles. Protege contra los rayos UVA y UVB.",
+        "Categoría": "Dermocosmética",
+        "Precio": 11700,
+        "Stock": 18,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/230863-800-auto?v=638028213897570000&width=800&height=auto&aspect=true"
+      },
+      {
+        "ID": 6,
+        "Nombre del Producto": "Analgésico 500mg",
+        "Descripción": "Tabletas analgésicas de 500mg para el alivio del dolor leve a moderado y la fiebre.",
+        "Categoría": "Salud y Farmacia",
+        "Precio": 1300,
+        "Stock": 25,
+        "img":"https://www.disfarma.com.co/fotosproductos/main_producto_3.jpg"
+      },
+      {
+        "ID": 7,
+        "Nombre del Producto": "Labial Hidratante",
+        "Descripción": "Bálsamo labial con ingredientes naturales que hidrata y protege los labios secos y agrietados.",
+        "Categoría": "Belleza",
+        "Precio": 4200,
+        "Stock": 10,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/251604-800-auto?v=638422175577130000&width=800&height=auto&aspect=true"
+      },
+      {
+        "ID": 8,
+        "Nombre del Producto": "Serum Anti-envejecimiento",
+        "Descripción": "Serum facial con retinol y vitamina C que reduce las arrugas y mejora la elasticidad de la piel.",
+        "Categoría": "Dermocosmética",
+        "Precio": 10200,
+        "Stock": 12,
+        "img":"https://farmacityar.vtexassets.com/arquivos/ids/222308-800-auto?v=637877142493670000&width=800&height=auto&aspect=true"
+      }
+
+]

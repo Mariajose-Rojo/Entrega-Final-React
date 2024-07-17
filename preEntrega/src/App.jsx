@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Promocion from './components/Promocion'
 import Banner from './components/Banner'
+import ItemCount from './components/ItemCount'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Promocion/>
       <Navbar/>
       <Banner/>
+      <ItemCount stock={20}/>
     </>
   )
 }
