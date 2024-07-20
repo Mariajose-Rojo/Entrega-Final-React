@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Promocion from './components/Promocion'
 import Banner from './components/Banner'
 import ItemCount from './components/ItemCount'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <ItemCount stock={20}/>
+      <ItemListContainer/>
     </>
   )
 }
