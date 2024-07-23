@@ -6,6 +6,7 @@ import Promocion from './components/Promocion'
 import Banner from './components/Banner'
 import ItemCount from './components/ItemCount'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Banner/>
       <ItemCount stock={20}/>
       <ItemListContainer/>
+      <ItemDetailContainer/>
     </>
   )
 }
