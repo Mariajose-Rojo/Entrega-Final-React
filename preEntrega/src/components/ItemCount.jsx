@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const ItemCount = ({stock}) =>{
     //defino el estado del contador q le paso al boton central
@@ -29,6 +29,10 @@ const ItemCount = ({stock}) =>{
         }
     }
 
+    // modificacion para que el stock se adapte a cada producto
+    useEffect(() =>{
+        setStock(stock)
+    }, [stock])
 
     return(
         <>
