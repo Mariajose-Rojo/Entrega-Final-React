@@ -54,7 +54,7 @@ const ItemCount = ({ stock, onAdd }) => {
         </div>
       ) : (
         <div className="col text-center">
-          <Link to="/cart" className="text-center mb-4 btn btn-success rounded-5">Finalizar Compra</Link>
+          <Link to="/cart" className="text-center mb-4 btn btn-success rounded-5">Ver Carrito</Link>
         </div>
       )}
     </>

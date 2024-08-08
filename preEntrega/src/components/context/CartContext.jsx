@@ -28,8 +28,17 @@ const CartContextProvider = ({ children }) => {
     return cart.some((item) => item.id === id);
   };
 
+  const totalProducts = () =>{
+    return cart.reduce((acumulador, item) => acumulador += item.quantity, 0);
+  };
+
+  const sumProducts = () =>{
+    return cart.reduce((acumulador, item) => acumulador += item.quantity * item.precio, 0); //calculo la cant de productos del mismo item, multiplicado por su precio
+  };
+
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalProducts, sumProducts }}>
       {children}
     </CartContext.Provider>
   );

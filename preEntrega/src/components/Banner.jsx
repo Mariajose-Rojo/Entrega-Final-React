@@ -1,7 +1,7 @@
 const Banner = () =>{
     return(
         <div className="container-banner">
-            <div className="row mt-0" >
+            <div className="row align-items-center" >
                 <div className="row img-banner py-5">
                 </div>
                 
