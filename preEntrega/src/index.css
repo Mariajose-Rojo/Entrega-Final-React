@@ -8,23 +8,27 @@
   font-family: sans-serif;
 }
 
+.container-banner{
+  margin: 0 auto;
+}
 .img-banner{
   background-image: url('https://farmacityar.vtexassets.com/assets/vtex.file-manager-graphql/images/10ccf753-a6e4-4a24-9ff0-316b1085a6a5___ae5633ae1a0da98ca980578195c3815a.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
-  /* border-radius: 8px;
-  width: 100%; */
+  height: 140px;
+  /* width: 69%; */
 }
 
 /* --------------carrousel de fotos-----------*/
-.carousel-item{
-  height: 570px;
-  width: 100%;
-}
+
+.carrousel-container{
+    height: 420px;
+    width: 69%;
+    margin: 0 auto;
+ }
+
 .carousel-item .d-img{
-  /* height: 100%; */
   object-fit: cover;
   filter: brightness(0.8);
 }
