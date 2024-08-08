@@ -17,3 +17,14 @@
   /* border-radius: 8px;
   width: 100%; */
 }
+
+/* --------------carrousel de fotos-----------*/
+.carousel-item{
+  height: 570px;
+  width: 100%;
+}
+.carousel-item .d-img{
+  /* height: 100%; */
+  object-fit: cover;
+  filter: brightness(0.8);
+}

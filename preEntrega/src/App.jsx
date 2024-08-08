@@ -1,32 +1,30 @@
-import { useState } from 'react'
-
-// import './App.css'
-import Navbar from './components/Navbar'
-import Promocion from './components/Promocion'
-import Banner from './components/Banner'
-import ItemCount from './components/ItemCount'
-import ItemListContainer from './components/ItemListContainer'
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import Promocion from './components/Promocion';
+import Footer from './components/Footer';
+import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 //importaciones para rutas:
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CartContextProvider from './components/context/CartContext';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Promocion/>
-        <Navbar/>
-        <Routes>
-          <Route path={"/"} element={<ItemListContainer/>}/>
-          <Route path={"/categoria/:id"} element={<ItemListContainer/>}/>
-          <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
-        </Routes>
-        {/* <ItemCount stock={20}/> */}
-        {/* <ItemListContainer/> */}
-        {/* <ItemDetailContainer/> */}
-      </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Promocion />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/categoria/:id" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartContextProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

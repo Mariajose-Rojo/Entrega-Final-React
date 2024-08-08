@@ -1,74 +1,82 @@
 [
-    {
-        "id":1, "Nombre": "Oleo Elvive x 100 ml",
-        "descripcion": "El Óleo Extraordinario transforma el pelo seco llenándolo de vida, luciendo sublime en todos sus aspectos.",
-        "img": "https://farmacityar.vtexassets.com/arquivos/ids/230686-800-auto?v=638024798167600000&width=800&height=auto&aspect=true",
-        "precio":8200,
-        "categoria": "Dermocosmetica" ,
-        "stock": 15
-    },
-    {
-        "id": 2,
-        "Nombre": "Crema Hidratante Facial",
-        "descripcion": "Crema hidratante para uso diario con ácido hialurónico. Aporta una hidratación intensa y duradera.",
-        "precio": 7850,
-        "stock": 20,
-        "categoria": "Dermocosmetica",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/254303-800-auto?v=638487958530330000&width=800&height=auto&aspect=true"
-      },
-      {
-        "id": 3,
-        "Nombre": "Multivitaminas Complejo B",
-        "descripcion": "Suplemento vitamínico que aporta todas las vitaminas del complejo B para mantener una buena salud y energía.",
-        "precio": 5450,
-        "stock": 15,
-        "categoria": "Salud-Farmacia",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/204855-800-auto?v=637404701491500000&width=800&height=auto&aspect=true"
-      },
-      {
-        "id": 4,
-        "Nombre": "Champú Fortalecedor",
-        "descripcion": "Champú enriquecido con biotina y keratina para fortalecer y revitalizar el cabello débil y dañado.",
-        "precio": 2600,
-        "stock": 22,
-        "categoria": "Belleza",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/252793-800-auto?v=638455249371870000&width=800&height=auto&aspect=true"
-      },
-      {
-        "id": 5,
-        "Nombre": "Protector Solar SPF 50+",
-        "descripcion": "Protector solar de amplio espectro con SPF 50+, ideal para pieles sensibles. Protege contra los rayos UVA y UVB.",
-        "precio": 11700,
-        "stock": 18,
-        "categoria": "Dermocosmetica",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/230863-800-auto?v=638028213897570000&width=800&height=auto&aspect=true"
-      },
-      {
-        "id": 6,
-        "Nombre": "Analgésico 500mg",
-        "descripcion": "Tabletas analgésicas de 500mg para el alivio del dolor leve a moderado y la fiebre.",
-        "precio": 1300,
-        "stock": 25,
-        "categoria":"Salud-Farmacia",
-        "img":"https://www.disfarma.com.co/fotosproductos/main_producto_3.jpg"
-      },
-      {
-        "id": 7,
-        "Nombre": "Labial Hidratante",
-        "descripcion": "Bálsamo labial con ingredientes naturales que hidrata y protege los labios secos y agrietados.",
-        "precio": 4200,
-        "stock": 10,
-        "categoria":"Belleza",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/251604-800-auto?v=638422175577130000&width=800&height=auto&aspect=true"
-      },
-      {
-        "id": 8,
-        "Nombre": "Serum Anti-envejecimiento",
-        "descripcion": "Serum facial con retinol y vitamina C que reduce las arrugas y mejora la elasticidad de la piel.",
-        "precio": 10200,
-        "stock": 12,
-        "categoria":"Dermocosmetica",
-        "img":"https://farmacityar.vtexassets.com/arquivos/ids/222308-800-auto?v=637877142493670000&width=800&height=auto&aspect=true"
-      }
-
+  {
+    "id": 1,
+    "Nombre": "Oleo Elvive x 100 ml",
+    "descripcion": "El Óleo Extraordinario transforma el pelo seco llenándolo de vida, luciendo sublime en todos sus aspectos.",
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/230686-800-auto?v=638024798167600000&width=800&height=auto&aspect=true",
+    "precio": 8200,
+    "categoria": "Dermocosmetica",
+    "stock": 15,
+    "ficha_tecnica": "Cómo usar: Aplicar una pequeña cantidad sobre el cabello seco o húmedo. Distribuir uniformemente y peinar como de costumbre. Fecha de Expiración: 2025-12-31. Testeado en Animales: No."
+  },
+  {
+    "id": 2,
+    "Nombre": "Crema Hidratante Facial",
+    "descripcion": "Crema hidratante para uso diario con ácido hialurónico. Aporta una hidratación intensa y duradera.",
+    "precio": 7850,
+    "categoria": "Dermocosmetica",
+    "stock": 20,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/254303-800-auto?v=638487958530330000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Aplicar sobre la piel limpia y seca del rostro y cuello. Masajear suavemente hasta su completa absorción. Fecha de Expiración: 2024-10-31. Testeado en Animales: Sí."
+  },
+  {
+    "id": 3,
+    "Nombre": "Multivitaminas Complejo B",
+    "descripcion": "Suplemento vitamínico que aporta todas las vitaminas del complejo B para mantener una buena salud y energía.",
+    "precio": 5450,
+    "categoria": "Salud-Farmacia",
+    "stock": 15,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/204855-800-auto?v=637404701491500000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Tomar una cápsula al día con agua, preferiblemente durante una comida. Fecha de Expiración: 2023-08-31. Testeado en Animales: No."
+  },
+  {
+    "id": 4,
+    "Nombre": "Champú Fortalecedor",
+    "descripcion": "Champú enriquecido con biotina y keratina para fortalecer y revitalizar el cabello débil y dañado.",
+    "precio": 2600,
+    "categoria": "Belleza",
+    "stock": 22,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/252793-800-auto?v=638455249371870000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Aplicar sobre el cabello mojado, masajear suavemente el cuero cabelludo y enjuagar abundantemente. Fecha de Expiración: 2023-06-30. Testeado en Animales: Sí."
+  },
+  {
+    "id": 5,
+    "Nombre": "Protector Solar SPF 50+",
+    "descripcion": "Protector solar de amplio espectro con SPF 50+, ideal para pieles sensibles. Protege contra los rayos UVA y UVB.",
+    "precio": 11700,
+    "categoria": "Dermocosmetica",
+    "stock": 18,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/230863-800-auto?v=638028213897570000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Aplicar generosamente sobre la piel seca 15 minutos antes de la exposición solar. Reaplicar cada 2 horas o después de nadar o sudar. Fecha de Expiración: 2024-09-30. Testeado en Animales: No."
+  },
+  {
+    "id": 6,
+    "Nombre": "Analgésico 500mg",
+    "descripcion": "Tabletas analgésicas de 500mg para el alivio del dolor leve a moderado y la fiebre.",
+    "precio": 1300,
+    "categoria": "Salud-Farmacia",
+    "stock": 25,
+    "img": "https://www.disfarma.com.co/fotosproductos/main_producto_3.jpg",
+    "ficha_tecnica": "Cómo usar: Tomar una tableta cada 6 horas según sea necesario para el alivio del dolor o la fiebre. Fecha de Expiración: 2023-12-31. Testeado en Animales: Sí."
+  },
+  {
+    "id": 7,
+    "Nombre": "Labial Hidratante",
+    "descripcion": "Bálsamo labial con ingredientes naturales que hidrata y protege los labios secos y agrietados.",
+    "precio": 4200,
+    "categoria": "Belleza",
+    "stock": 10,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/251604-800-auto?v=638422175577130000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Aplicar sobre los labios según sea necesario para mantener la hidratación. Fecha de Expiración: 2023-11-30. Testeado en Animales: No."
+  },
+  {
+    "id": 8,
+    "Nombre": "Serum Anti-envejecimiento",
+    "descripcion": "Serum facial con retinol y vitamina C que reduce las arrugas y mejora la elasticidad de la piel.",
+    "precio": 10200,
+    "categoria": "Dermocosmetica",
+    "stock": 12,
+    "img": "https://farmacityar.vtexassets.com/arquivos/ids/222308-800-auto?v=637877142493670000&width=800&height=auto&aspect=true",
+    "ficha_tecnica": "Cómo usar: Aplicar sobre la piel limpia y seca del rostro, evitando el área de los ojos. Masajear suavemente hasta su completa absorción. Fecha de Expiración: 2025-02-28. Testeado en Animales: Sí."
+  }
 ]
