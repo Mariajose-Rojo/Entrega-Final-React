@@ -4,22 +4,30 @@ import arrayProduct from '../assets/json/products.json';
 import ItemList from './ItemList';
 import Banner from './Banner';
 import Carrousel from './Carrousel';
+//importo mi base de datos 
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { id } = useParams();
 
-  useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(id ? arrayProduct.filter((item) => item.categoria === id) : arrayProduct);
-      }, 2000);
-    });
+  //lo activo solo la primera vez asi no se carga constantemente
+  // useEffect(() => {
+  //   const bd = getFirestore(); // Accedo a la base de datos de Firestore
+  //   const productCollection = collection(bd, 'productos'); // Especifica el nombre de la colección como string
 
-    promesa.then((data) => {
-      setItems(data);
-    });
-  }, [id]);
+  //   arrayProduct.forEach(async (producto) => {
+  //     try {
+  //       await addDoc(productCollection, producto);
+  //       console.log("Producto añadido:", producto);
+  //     } catch (error) {
+  //       console.error("Error al añadir producto:", error);
+  //     }
+  //   });
+
+  //   console.log("Proceso de importación finalizado!");
+  // }, []);
 
   return (
     <>

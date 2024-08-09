@@ -14,6 +14,7 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <div className="container text-center">
+        <p><img src="/public/bag.svg" alt="" style={{ width:"80px" }}/></p>
         <h2>No hay ítems en el carrito</h2>
         <Link to="/" className="btn btn-success rounded-5 mt-4">
           Volver al inicio
