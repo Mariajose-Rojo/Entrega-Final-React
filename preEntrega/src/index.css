@@ -8,6 +8,9 @@
   font-family: sans-serif;
 }
 
+.container-nav img{
+  margin-left: 4rem;
+}
 /* --------------banner-----------*/
 .container-banner{
   margin: 0 auto;
@@ -17,16 +20,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 140px;
+  height: 200px;
   /* width: 69%; */
 }
 
 /* --------------carrousel de fotos-----------*/
 
 .carrousel-container{
-    height: 420px;
-    width: 69%;
-    margin: 0 auto;
+    height: 600px;
+    /* width: 69%; */
+    margin-bottom:2rem;
  }
 
 .carousel-item .d-img{

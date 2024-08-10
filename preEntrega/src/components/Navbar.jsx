@@ -3,7 +3,7 @@ import CartWidget from "./CartWidget";
 
 const Navbar = () => {
     return (
-      <div className="container bg-light py-4 mb-2">
+      <div className="container-nav bg-light py-4 mb-2">
         <div className="row align-items-center">
             {/* parte del logo */}
             <div className="col">
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* carrito de compras */}
-            <div className="col text-end">
+            <div className="col text-end mr-8">
                 <CartWidget/>
             </div>
         </div>
