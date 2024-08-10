@@ -3,18 +3,13 @@ import { Link } from 'react-router-dom';
 import { CartContext } from './context/CartContext';
 
 const Cart = () => {
-  const { cart, removeItem, totalProducts, clearCart } = useContext(CartContext);
+  const { cart, removeItem, clearCart, sumProducts } = useContext(CartContext);
 
-  //calcula el precio total de los ítems en el carrito
-  const getTotalPrice = () => {
-    return cart.reduce((total, item) => total + item.precio * item.quantity, 0);
-  };
-
-  //Para saber si el carrito esta vacio
+  // Para saber si el carrito está vacío
   if (cart.length === 0) {
     return (
       <div className="container text-center">
-        <p><img src="/public/bag.svg" alt="" style={{ width:"80px" }}/></p>
+        <p><img src="/public/bag.svg" alt="" style={{ width: "80px" }} /></p>
         <h2>No hay ítems en el carrito</h2>
         <Link to="/" className="btn btn-success rounded-5 mt-4">
           Volver al inicio
@@ -23,8 +18,7 @@ const Cart = () => {
     );
   }
 
-
-  //Si el carrito no está vacío, se hace un desglose de los ítems con map
+    //Si el carrito no está vacío, se hace un desglose de los ítems con map
   return (
     <div className="container">
       <h2 className="text-center"><b>Carrito de Compras</b></h2>
@@ -42,7 +36,7 @@ const Cart = () => {
                   Subtotal: <b>${item.precio * item.quantity}</b>
                 </p>
                 
-                <button type="button" className="btn btn-danger rounded-5 mt-auto" onClick={() => removeItem(item.id)}> 
+                <button type="button" className="btn btn-danger rounded-5 mt-auto" onClick={() => removeItem(item.id)}>
                   Eliminar
                 </button>
               </div>
@@ -51,16 +45,16 @@ const Cart = () => {
         ))}
       </div>
       <div className="text-center my-4 p-2">
-        <h3>Total: ${getTotalPrice()}</h3>
+        <h3>Total: ${sumProducts()}</h3>
         <button className="btn btn-danger rounded-5 mt-2" onClick={clearCart}>
           Vaciar Carrito
         </button>
         <Link to="/" className="btn btn-success rounded-5 mt-2">
           Seguir Comprando
         </Link>
-        <button className="btn btn-primary rounded-5 mt-2">
+        <Link to="/chekout" className="btn btn-primary rounded-5 mt-2">
           Finalizar Compra
-        </button>
+        </Link>
       </div>
     </div>
   );
