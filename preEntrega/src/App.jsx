@@ -9,6 +9,7 @@ import Chekout from './components/Chekout';
 //importaciones para rutas:
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartContextProvider from './components/context/CartContext';
+import Error404 from './components/Error404';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/chekout" element={<Chekout/>} />
+            <Route path="/*" element={<Error404/>} /> 
+            {/* para cualquier otra ruta q no sea la indicada, retorna error */}
           </Routes>
           <Footer />
         </BrowserRouter>

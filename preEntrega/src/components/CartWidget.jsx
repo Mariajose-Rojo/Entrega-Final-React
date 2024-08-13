@@ -12,8 +12,8 @@ const CartWidget = () => {
                 <Link to= {"/cart"}>
                 <div>
                     <button type="button" className="btn btn-light position-relative">
-                    <img src="public/cart.svg" alt="carrito" width={22} />
-                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> {totalProducts()} </span>
+                    <img src="/public/cart.svg" alt="carrito" width={28} className="me-5"/>
+                    <span className="span-num position-absolute top-0 me-6 translate-middle badge rounded-pill bg-danger"> {totalProducts()} </span>
                     </button>
         
                 </div>
@@ -23,10 +23,9 @@ const CartWidget = () => {
     else{
         <div>
             <button type="button" className="btn btn-light position-relative">
-            <img src="public/cart.svg" alt="carrito" width={22} />
-            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                 <img src="/public/cart.svg" alt="carrito" width={25} className="me-2" />
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{ marginRight:"2rem" }}>{totalProducts()}</span>
             </button>
-        
         </div>
     }
     

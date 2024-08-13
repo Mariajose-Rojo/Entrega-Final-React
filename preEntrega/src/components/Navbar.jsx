@@ -26,7 +26,7 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* carrito de compras */}
-            <div className="col text-end mr-8">
+            <div className="col text-end me-1">
                 <CartWidget/>
             </div>
         </div>

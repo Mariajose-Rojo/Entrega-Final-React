@@ -54,12 +54,9 @@ const ItemCount = ({ stock, onAdd }) => {
         </div>
       ) : (
         <div className="col text-center">
-          <div className="row">
-          <Link to="/cart" className="text-center mb-1 btn btn-success rounded-5">Ver Carrito</Link>
-          </div>
-          <div className="row">
-          <Link to="/" className="btn btn-success rounded-5 m-3 text-center">Seguir Comprando
-          </Link>
+          <div className="d-flex flex-column align-items-center">
+            <Link to="/cart" className="btn btn-success rounded-5 mb-2 w-auto">Ver Carrito</Link>
+            <Link to="/" className="btn btn-success rounded-5 w-auto mb-3">Seguir Comprando</Link>
           </div>
         </div>
       )}

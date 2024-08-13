@@ -4,8 +4,11 @@ import { getFirestore, collection, getDocs, query, where } from "firebase/firest
 import ItemList from './ItemList';
 import Banner from './Banner';
 import Carrousel from './Carrousel';
+import Loading from './Loading';
 
 const ItemListContainer = () => {
+  //genero un estado para el loading
+  const [loading, setLoading] = useState(true); //si esta cargando es true
   const [items, setItems] = useState([]);
   const { id } = useParams();
 
@@ -27,6 +30,8 @@ const ItemListContainer = () => {
         const querySnapshot = await getDocs(q);
         const products = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         setItems(products);
+        //una vez cargo todos los elementos cambio el estado del loading
+        setLoading(false);
       } catch (error) {
         console.error("Error al obtener los productos:", error);
       }
@@ -35,30 +40,13 @@ const ItemListContainer = () => {
     fetchProducts();
   }, [id]);
 
-    //IMPORTAR PRODUCTS A MI BD: lo activo solo la primera vez asi no se carga constantemente
-  // useEffect(() => {
-  //   const bd = getFirestore(); // Accedo a la base de datos de Firestore
-  //   const productCollection = collection(bd, 'productos'); // Especifica el nombre de la colección como string
-
-  //   arrayProduct.forEach(async (producto) => {
-  //     try {
-  //       await addDoc(productCollection, producto);
-  //       console.log("Producto añadido:", producto);
-  //     } catch (error) {
-  //       console.error("Error al añadir producto:", error);
-  //     }
-  //   });
-
-  //   console.log("Proceso de importación finalizado!");
-  // }, []);
-
   return (
     <>
       <Carrousel />
       <Banner />
       <div className="container">
         <div className="row">
-          <ItemList items={items} />
+          {loading ? <Loading/> : <ItemList items={items}/>}
         </div>
       </div>
     </>
